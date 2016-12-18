@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="aroundpsu" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\VS\\MapMVCPro\\MapMVCPro\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\VS\\MapMVCPro\\MapMVCPro\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="aroundpsu/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\VS\\MapMVCPro\\MapMVCPro\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="MapMVCPro.Models.MyDatabaseEntities-Web.config Connection String" description="" value="" tags="" />
+  <parameter name="MyDatabaseEntities-Web.config Connection String" description="MyDatabaseEntities Connection String used in web.config by the application to access the database." value="Server=tcp:aspnetgroupserver.database.windows.net,1433;Initial Catalog=database;Persist Security Info=False;User ID=chaman;Password=0897249489Oz;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\VS\\MapMVCPro\\MapMVCPro\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyDatabaseEntities']/@connectionString" />
+  </parameter>
+</parameters>
